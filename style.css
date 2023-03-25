@@ -42,7 +42,7 @@
 
 #calculator h2::before {
   height: 3px;
-  width: 150px;
+  width: 195px;
   bottom: 2px;
 
   position: absolute;
@@ -109,4 +109,37 @@
 
 #calculate:hover {
   background: linear-gradient(90deg, #005aa3, #6f00af);
+}
+
+@media screen and (max-width: 480px) {
+  #calculator {
+    padding: 20px;
+  }
+
+  #calculator h2 {
+    font-size: 15px;
+  }
+
+  #calculator h2::before {
+    height: 2px;
+    width: 100px;
+    bottom: -1px;
+  }
+
+  .input-field label {
+    font-size: 12px;
+    color: #c8ced6;
+    font-weight: 500;
+  }
+
+  .input-field input {
+    padding: 3px;
+    border-bottom: 1px solid #4c1d95;
+
+    font-size: 13px;
+  }
+
+  #total {
+    font-size: 30px;
+  }
 }
